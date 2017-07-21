@@ -36,12 +36,7 @@ COPY src/ /var/www/html/
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 # Set default parameters
-ENV MYSQL_HOSTNAME "mysql"
-ENV MYSQL_USERNAME "root"
-ENV MYSQL_PASSWORD "secure"
-ENV MYSQL_DATABASE "magento"
-ENV CRYPT_KEY ""
-ENV TABLE_PREFIX ""
-ENV URI "http://localhost"
+ENV MYSQL_HOSTNAME="mysql" MYSQL_USERNAME="root" MYSQL_PASSWORD="secure" MYSQL_DATABASE="magento" CRYPT_KEY="" \
+    TABLE_PREFIX="" URI="http://localhost"
 
 ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
