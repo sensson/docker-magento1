@@ -66,13 +66,13 @@ Once the container starts it will automatically populate all required fields.
 
 Environment variable  | Description                   | Default
 --------------------  | -----------                   | -------
-MYSQL_HOSTNAME        | MySQL hostname                | Empty
-MYSQL_USERNAME        | MySQL username                | Empty
-MYSQL_PASSWORD        | MySQL password                | Empty
-MYSQL_DATABASE        | MySQL database                | Empty
+MYSQL_HOSTNAME        | MySQL hostname                | mysql
+MYSQL_USERNAME        | MySQL username                | root
+MYSQL_PASSWORD        | MySQL password                | random
+MYSQL_DATABASE        | MySQL database                | magento
 TABLE_PREFIX          | Table prefix                  | Empty
 CRYPTO_KEY            | Magento Encryption key        | Emtpy
-URI                   | Uri (e.g. http://localhost)   | Empty
+URI                   | Uri (e.g. http://localhost)   | http://localhost
 RUNTYPE               | Set to development to enable  | Empty
 
 Include the port mapping in `URI` if you run your shop on a local development
