@@ -7,27 +7,6 @@ if [ -n "$COMMAND" ]; then
 	echo "ENTRYPOINT: Executing override command"
 	exec $COMMAND
 else
-	# Check MySQL variables
-	if [ -z "$MYSQL_HOSTNAME" ]; then
-		echo "MYSQL_HOSTNAME not set"
-		exit 1
-	fi
-
-	if [ -z "$MYSQL_USERNAME" ]; then
-		echo "MYSQL_USERNAME not set"
-		exit 1
-	fi
-
-	if [ -z "$MYSQL_PASSWORD" ]; then
-		echo "MYSQL_PASSWORD not set"
-		exit 1
-	fi
-
-	if [ -z "$MYSQL_DATABASE" ]; then
-		echo "MYSQL_DATABASE not set"
-		exit 1
-	fi
-
 	# Setup Magento configuration
 	if [ -n "$URI" ]; then
 		echo "Updating URI to $URI"
