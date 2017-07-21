@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) pdo pdo_mysql mysqli mysql \
     && pecl install redis-3.1.0 \
     && docker-php-ext-enable redis \ 
-    && a2enmod rewrite
+    && a2enmod rewrite headers
 
 # Install composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
