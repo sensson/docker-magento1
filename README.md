@@ -1,5 +1,7 @@
 # docker-magento-base
 
+[![Docker Automated Build](https://img.shields.io/docker/automated/sensson/magento-base-1.svg)]() [![Docker Build Status](https://img.shields.io/docker/build/sensson/magento-base-1.svg)]()
+
 A base Magento 1.9 image that can be used to scale in production. This is can
 be used in combination with MySQL and Redis. It is opiniated and includes
 support for Composer, ionCube, Redis and the required PHP modules for a basic 
