@@ -59,7 +59,8 @@ and your database details:
 </resources>
 ```
 
-Do not remove the settings completely and leave `local.xml` in place.
+Do not remove the settings completely and always leave `local.xml` in place.
+Once the container starts it will automatically populate all required fields.
 
 ## Environment variables
 
