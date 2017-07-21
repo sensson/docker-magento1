@@ -74,6 +74,9 @@ CRYPTO_KEY            | Magento Encryption key        | Emtpy
 URI                   | Uri (e.g. http://localhost)   | Empty
 RUNTYPE               | Set to development to enable  | Empty
 
+Include the port mapping in `URI` if you run your shop on a local development
+environment, e.g. `http://localhost:3000/`.
+
 ## Development mode
 
 Setting `RUNTYPE` to `development` will turn on public error reports. Anything
