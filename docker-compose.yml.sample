@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: frontend-magento
+    image: sensson/magento-base-1:latest
+    ports:
+      - 80:80
+    environment:
+      MYSQL_HOSTNAME: 
+      MYSQL_USERNAME: 
+      MYSQL_PASSWORD: 
+      MYSQL_DATABASE: 
+      URI: http://localhost/
+      CRYPTO_KEY: 
+  redis:
+    container_name: backend-redis
+    image: redis:alpine
