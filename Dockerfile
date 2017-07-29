@@ -35,6 +35,8 @@ RUN cd /tmp \
 # Set up the application
 COPY src/ /var/www/html/
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY etc/php.ini /usr/local/etc/php/conf.d/00_magento.ini
+COPY etc/apache.conf /etc/apache2/conf-enabled/00_magento.conf
 
 # Set default parameters
 ENV MYSQL_HOSTNAME="mysql" MYSQL_USERNAME="root" MYSQL_PASSWORD="secure" MYSQL_DATABASE="magento" CRYPT_KEY="" \
