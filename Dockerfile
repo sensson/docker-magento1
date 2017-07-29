@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install -j$(nproc) pdo pdo_mysql mysqli mysql \
     && pecl install redis-3.1.0 \
-    && docker-php-ext-enable redis \ 
+    && docker-php-ext-enable redis \
     && a2enmod rewrite headers \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
