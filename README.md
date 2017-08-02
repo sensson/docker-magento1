@@ -22,7 +22,7 @@ COPY src/ /var/www/html/
 
 The container assumes you do not store data in a folder along with the
 application. Don't use Docker volumes for scale. Use CephFS, GlusterFS or
-integrate with S3 or S3-compatible services such as Fuga.io.
+integrate with S3 or S3-compatible services such as [Fuga.io](https://fuga.io).
 
 # Configuration
 
