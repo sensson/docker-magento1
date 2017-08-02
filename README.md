@@ -4,8 +4,8 @@
 
 A base Magento 1.9 image that can be used to scale in production. This can
 be used in combination with MySQL and Redis. It is opiniated and includes
-support for Composer, ionCube, Redis and the required PHP modules for a basic 
-Magento installation.
+support for Composer, ionCube, Redis, OPcache, and the required PHP modules 
+for a basic Magento installation.
 
 It does not include Magento. 
 
